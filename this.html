@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    var car = {
+      color : 'red',
+      drive:function (){
+        if (this.started==true){
+          alert("Zoom Zoom!!");
+        }else{
+          alert("你需要启动");
+        }
+      },
+      start: function(){
+        this.started=true;
+      },
+      stop:function(){
+        this.started=false;
+      }
+      //getColor: function(){
+        //return this.color;
+      //},
+      //setColor: function(c){
+        //this.color = c;
+      //}
+    //}
+    //document.write(car.getColor() + "<br>");
+    //car.setColor('Green');
+    //document.write(car.getColor() + "<br>");
+    }
+    car.start();
+    car.drive();
+    car.stop();
+    car.drive()
+
+  </script>
+  
+</body>
+</html>
